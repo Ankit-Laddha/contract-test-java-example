@@ -1,0 +1,40 @@
+{
+  "provider": {
+    "name": "PhraseMicroservice"
+  },
+  "consumer": {
+    "name": "ConsumerMicroservice"
+  },
+  "interactions": [
+    {
+      "description": "an echo req",
+      "request": {
+        "method": "POST",
+        "path": "/api/echo",
+        "body": {
+          "timestamp": 1593373353,
+          "greetings": "hello!"
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "phrase": "hello! sent at: 1593373353 worked at: 1621329667"
+        }
+      },
+      "providerStates": [
+        {
+          "name": "a greetings req"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.0.10"
+    }
+  }
+}

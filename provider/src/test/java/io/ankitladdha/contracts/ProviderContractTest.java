@@ -26,7 +26,7 @@ import static org.mockito.Mockito.when;
 @AutoConfigureMockMvc
 @TestPropertySource(locations = "classpath:application-contract-test.properties")
 @Provider("PhraseMicroservice")
-@PactFolder("../consumer/target/pacts")
+@PactFolder("../consumer/pacts")
 public class ProviderContractTest {
 
     @Value("${server.host}")
